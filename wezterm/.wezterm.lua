@@ -45,8 +45,8 @@ cfg.window_padding = {
 cfg.window_decorations = "TITLE | RESIZE" -- 'TITLE | RESIZE'
 
 -- Terminal Background
--- cfg.window_background_opacity = 0.9
--- cfg.macos_window_background_blur = 20
+cfg.window_background_opacity = 0.95
+cfg.macos_window_background_blur = 20
 --[[cfg.window_background_image = ""
 cfg.window_background_image_hsb = {
 	brightness = 1.0,
