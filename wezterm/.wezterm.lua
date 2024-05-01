@@ -62,7 +62,4 @@ cfg.text_background_opacity = 1.0
 cfg.enable_tab_bar = false
 cfg.hide_tab_bar_if_only_one_tab = true
 
--- Disable WezTerm multiplex
-cfg.multiplex_pane = false
-
 return cfg
