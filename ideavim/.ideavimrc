@@ -1,0 +1,62 @@
+let mapleader=" "
+inoremap jj <Esc>
+
+"--- Plugins ---
+set surround
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/commentary'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'kana/vim-textobj-entire'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'tommcdo/vim-exchange'
+Plug 'machakann/vim-highlightedyank'
+Plug 'preservim/nerdtree'
+Plug 'TheBlob42/idea-which-key'
+set which-key
+
+"--- Plugin settings ---
+set notimeout
+let g:argtextobj_pairs="[:],(:),<:>"
+map <C-n> <Plug>NextWholeOccurrence
+
+"--- Common settings ---
+set nu
+set number relativenumber
+set visualbell
+set showmode
+set showcmd
+set scrolloff=10
+set clipboard+=unnamed
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set ideajoin
+set ideastatusicon=gray
+set selectmode=mouse
+
+"--- Key mappings ---
+noremap <C-Tab> :bnext<CR>
+
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <plug>(easymotion-f)
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GoToNextError)
+
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
+"Reformat the current line only
+map <leader>l V<Action>(ReformatCode)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
