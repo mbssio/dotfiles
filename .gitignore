@@ -24,5 +24,5 @@ tmux/
 # Skhd
 #skhd/
 
-# Neofetch
-#neofetch/
+# Neofetch - migrating to fastfetch
+neofetch/
