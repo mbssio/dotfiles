@@ -1,0 +1,9 @@
+[user]
+	name = Markus Niggemeier
+	email = mn@mbss.io
+[alias]
+	graph = log --graph --all --oneline --simplify-by-decoration
+[branch]
+	sort = -authordate
+[init]
+	defaultBranch = main
