@@ -47,7 +47,7 @@ cfg.window_decorations = "TITLE | RESIZE" -- 'TITLE | RESIZE'
 -- Terminal Background
 -- cfg.window_background_opacity = 0.9
 -- cfg.macos_window_background_blur = 20
---[[cfg.window_background_image = "/Users/markus/.dotfiles/wezterm/london.jpg"
+--[[cfg.window_background_image = ""
 cfg.window_background_image_hsb = {
 	brightness = 1.0,
 	hue = 1.0,
@@ -63,6 +63,6 @@ cfg.enable_tab_bar = false
 cfg.hide_tab_bar_if_only_one_tab = true
 
 -- Disable WezTerm multiplex
---cfg.multiplex_pane = false
+cfg.multiplex_pane = false
 
 return cfg
