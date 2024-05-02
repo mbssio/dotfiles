@@ -1,18 +1,20 @@
+"--- Set Leader key ---
 let mapleader=" "
+
+"--- jj escape ---
 inoremap jj <Esc>
 
 "--- Plugins ---
 set surround
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/commentary'
-Plug 'vim-scripts/argtextobj.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'kana/vim-textobj-entire'
-Plug 'vim-scripts/ReplaceWithRegister'
-Plug 'tommcdo/vim-exchange'
-Plug 'machakann/vim-highlightedyank'
-Plug 'preservim/nerdtree'
-Plug 'TheBlob42/idea-which-key'
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+set highlightedyank
+set nerdtree
 set which-key
 
 "--- Plugin settings ---
@@ -60,3 +62,23 @@ map <leader>l V<Action>(ReformatCode)
 
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
+
+"--- Which key settings ---
+let g:WhichKey_FontSize = 16
+
+let g:WhichKeyDesc_leader = "<leader> Leader key"
+
+let g:WhichKeyDesc_leader = "<leader>d Debug"
+let g:WhichKeyDesc_leader = "<leader>r Rename"
+let g:WhichKeyDesc_leader = "<leader>c Stop"
+let g:WhichKeyDesc_leader = "<leader>z Distraction Free Mode"
+
+let g:WhichKeyDesc_leader = "<leader>s Select in Project View"
+let g:WhichKeyDesc_leader = "<leader>a Annotate"
+let g:WhichKeyDesc_leader = "<leader>h Show Tabbed File History"
+let g:WhichKeyDesc_leader = "<S-Space> Go to Next Error"
+
+let g:WhichKeyDesc_leader = "<leader>l Reformat Line"
+
+let g:WhichKeyDesc_leader = "<leader>b Toggle Line Breakpoint"
+let g:WhichKeyDesc_leader = "<leader>o File Structure Popup"
