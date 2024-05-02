@@ -3,24 +3,24 @@
   <img src="assets/banner.png" alt="Banner">
 </p>
 <p align="center">
-  <b>Just my dotfiles</b>
+  <b>... just my dotfiles</b>
 </p>
 <p align="center">
-  <a href="https://github.com/mbssio/dotfiles/blob/master/LICENSE.md">
-    <img alt="License Badge" src="https://img.shields.io/github/license/mbssio/dotfiles">
-  </a>
+  <img alt="License Badge" src="https://img.shields.io/github/license/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23a6da95">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%237dc4e4">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23eed49f">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23c6a0f6">
 </p>
 
-## My Dotfiles
 
-This repo uses [stow][] to manage the symlinks, but you don't **have** to --
+I use [GNU Stow][] to manage the symlinks, but this is **optional** -
 you can also just individually symlink the contents of each directory directly
-into your home.
+into your home directory.
 
-If you want to use stow, clone this repository into `~/dotfiles` and do
+If you want to use Stow, clone this repository into `~/.dotfiles` and do
 
 ```sh
-cd ~/dotfiles && make
+cd ~/.dotfiles && make
 ```
 
-[stow]: https://www.gnu.org/software/stow/
+[GNU Stow]: https://www.gnu.org/software/stow/
