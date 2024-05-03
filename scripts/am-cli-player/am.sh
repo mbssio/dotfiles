@@ -68,22 +68,22 @@ Q                       Quit np and Music.app
 			nocolor=$(echo -e '\033[0m')
 		fi
 		if [ $vol = 0 ]; then
-			volIcon=🔇
+			volIcon=󰝟
 		else
-			volIcon=🔊
+			volIcon=󰕾
 		fi
 		vol=$(( vol / 12 ))
 		if [ $shuffle = 'false' ]; then
-			shuffleIcon='➡️ '
+			shuffleIcon=󰒞
 		else
-			shuffleIcon=🔀
+			shuffleIcon=󰒝
 		fi
 		if [ $repeat = 'off' ]; then
-			repeatIcon='↪️ '
+			repeatIcon=󰑗
 		elif [ $repeat = 'one' ]; then
-			repeatIcon=🔂
+			repeatIcon=󰑘
 		else
-			repeatIcon=🔁
+			repeatIcon=󰑖
 		fi
 		volBars='▁▂▃▄▅▆▇'
 		volBG=${volBars:$vol}
