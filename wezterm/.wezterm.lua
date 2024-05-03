@@ -36,7 +36,7 @@ cfg.cursor_blink_rate = 500
 -- Window Padding
 cfg.window_padding = {
 	left = 25,
-	right = 0,
+	right = 5,
 	top = 10,
 	bottom = 0,
 }
