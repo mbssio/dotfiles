@@ -54,6 +54,12 @@ map <leader>a <Action>(Annotate)
 map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
 map <S-Space> <Action>(GoToNextError)
 
+"Pane navigation
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 
@@ -65,6 +71,9 @@ map <leader>o <Action>(FileStructurePopup)
 
 "--- Which key settings ---
 let g:WhichKey_FontSize = 16
+let g:WhichKey_CommandColor = "#cad3f5"
+let g:WhichKey_PrefixColor = "#ee99a0"
+let g:WhichKey_SortOrder = "by_key_prefix_first"
 
 let g:WhichKeyDesc_leader = "<leader> Leader key"
 
