@@ -16,8 +16,8 @@ export ZSH_ASK_API_KEY=$(cat ~/.api_keys/chatgpt)
 alias ls="exa --long"
 alias j="autojump"
 alias 1p="opswd"
-alias en_de="dict.cc.py en de"
-alias de_en="dict.cc.py de en"
+alias en_de="$HOME/.dotfiles/scripts/dict-cc/dictcc.py en de"
+alias de_en="$HOME/.dotfiles/scripts/dict-cc/dictcc.py de en"
 export NVM_DIR="$HOME/.nvm"
 
 # Load nvm
