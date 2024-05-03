@@ -42,7 +42,7 @@ cfg.window_padding = {
 }
 
 -- Window Decorations
-cfg.window_decorations = "TITLE | RESIZE" -- 'TITLE | RESIZE'
+cfg.window_decorations = "RESIZE" -- 'TITLE | RESIZE'
 
 -- Terminal Background
 cfg.window_background_opacity = 0.95
