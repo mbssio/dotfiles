@@ -22,7 +22,7 @@ cfg.font = wezterm.font({
 	weight = bold,
 	harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "zero", "cv30", "cv01" },
 })
-cfg.font_size = 17
+cfg.font_size = 16
 cfg.dpi = 144.0
 cfg.line_height = 1.2
 

@@ -117,7 +117,7 @@ Q                       Quit np and Music.app
 			else
 				osascript -e 'tell application "Music" to set song repeat to off'
 			fi
-		elif [[ "${input}" == *"+"* ]]; then
+		elif [[ "${input}" == *"="* ]]; then
 			osascript -e 'tell application "Music" to set sound volume to sound volume + 5'
 		elif [[ "${input}" == *"-"* ]]; then
 			osascript -e 'tell application "Music" to set sound volume to sound volume - 5'
