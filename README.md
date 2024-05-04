@@ -3,7 +3,7 @@
   <img src="assets/banner.png" alt="Banner">
 </p>
 <p align="center">
-  <b>... just my dotfiles</b>
+  <b>... just my dotfiles and some scripts</b>
 </p>
 <p align="center">
   <img alt="License Badge" src="https://img.shields.io/github/license/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23a6da95">
