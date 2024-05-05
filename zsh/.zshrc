@@ -17,8 +17,8 @@ alias ls="exa --long"
 alias j="autojump"
 alias 1p="opswd"
 alias am="$HOME/.dotfiles/scripts/am-cli-player/am.sh"
-alias en_de="$HOME/.dotfiles/scripts/dict-cc/dictcc.py en de"
-alias de_en="$HOME/.dotfiles/scripts/dict-cc/dictcc.py de en"
+alias en_de="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar en de"
+alias de_en="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar de en"
 export NVM_DIR="$HOME/.nvm"
 
 # Load nvm
