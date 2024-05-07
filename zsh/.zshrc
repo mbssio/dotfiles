@@ -19,6 +19,7 @@ alias 1p="opswd"
 alias am="$HOME/.dotfiles/scripts/am-cli-player/am.sh"
 alias en_de="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar en de"
 alias de_en="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar de en"
+alias "rsyabai"="yabai --stop-service && yabai --start-service"
 export NVM_DIR="$HOME/.nvm"
 
 # Load nvm
