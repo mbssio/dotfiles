@@ -12,10 +12,14 @@ source $ZSH/oh-my-zsh.sh
 # zsh-ask configuration
 export ZSH_ASK_API_KEY=$(cat ~/.api_keys/chatgpt)
 
+# Deepl API key
+export DEEPL_API_KEY=$(cat ~/.api_keys/deepl)
+
 # Aliases
 alias ls="exa --long"
 alias j="autojump"
 alias 1p="opswd"
+alias vim="nvim"
 alias am="$HOME/.dotfiles/scripts/am-cli-player/am.sh"
 alias en_de="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar en de"
 alias de_en="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar de en"
