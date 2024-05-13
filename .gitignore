@@ -13,6 +13,9 @@ scripts/am-cli-player/tmp.*
 # Wezterm
 #wezterm/
 
+# Kitty
+kitty/
+
 # Neovim
 nvim/
 
@@ -30,9 +33,6 @@ tmux/
 
 # Skhd
 #skhd/
-
-# Neofetch - migrating to fastfetch
-neofetch/
 
 # Karabiner
 #karabiner/
