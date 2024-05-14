@@ -7,7 +7,6 @@
 </p>
 <p align="center">
   <img alt="License Badge" src="https://img.shields.io/github/license/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23a6da95">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%237dc4e4">
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23eed49f">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/mbssio/dotfiles?style=for-the-badge&labelColor=%23363a4f&color=%23c6a0f6">
 </p>
