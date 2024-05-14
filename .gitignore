@@ -20,7 +20,7 @@ kitty/
 nvim/
 
 # Tmux
-tmux/
+#tmux/
 
 # Zsh
 #zsh/

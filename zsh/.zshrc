@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git node npm github 1password autojump macos zsh-syntax-highlighting zsh-autosuggestions web-search tmux tmuxinator zsh-ask)
 
 # Autostart Tmux
-# ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
