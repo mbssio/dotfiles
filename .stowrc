@@ -1,4 +1,5 @@
 --ignore am-cli-player 
 --ignore dict-cc
 --ignore pfetch
+--ignore wttr
 --ignore banner.png
