@@ -1,35 +1,28 @@
-#format = """
-#[█](fg:#8AADF4)\
-#$os\
-#$username\
-#[](bg:#C6A0F6 fg:#8AADF4)\
-#$directory\
-#[](fg:#C6A0F6 bg:#F5A97F)\
-#$git_branch\
-#$git_status\
-#[](fg:#F5A97F bg:#A6DA95)\
-#$c\
-#$elixir\
-#$elm\
-#$golang\
-#$gradle\
-#$haskell\
-#$java\
-#$julia\
-#$nodejs\
-#$nim\
-#$rust\
-#$scala\
-#[](fg:#A6DA95 bg:#7DC4E4)\
-#$docker_context\
-#[ ](fg:#7DC4E4)\
-#"""
-
 format = """
+[█](fg:#8AADF4)\
+$os\
 $username\
+[](bg:#C6A0F6 fg:#8AADF4)\
 $directory\
-[$git_branch](fg:#89b4fa bold)\
+[](fg:#C6A0F6 bg:#F5A97F)\
+$git_branch\
 $git_status\
+[](fg:#F5A97F bg:#A6DA95)\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+[](fg:#A6DA95 bg:#7DC4E4)\
+$docker_context\
+[ ](fg:#7DC4E4)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -39,9 +32,9 @@ $git_status\
 # and use the os module below
 [username]
 show_always = true
-style_user = "fg:#a6e3a1"
-style_root = "fg:#a6e3a1"
-format = '[ ->]($style bold)'
+style_user = "bg:#8AADF4 fg:#1E2030"
+style_root = "bg:#8AADF4 fg:#1E2030"
+format = '[ ]($style bold)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
@@ -51,19 +44,19 @@ style = "bg:#8AADF4 fg:#1E2030"
 disabled = true # Disabled by default
 
 [directory]
-style = "fg:#f9e2af"
+style = "bg:#C6A0F6 fg:#1E2030"
 format = "[ $path ]($style bold)"
-truncation_length = 1
-truncation_symbol = ""
+truncation_length = 3
+truncation_symbol = "…/"
 
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-#".dotfiles" = " "
-#"Documents" = "󰈙 "
-#"Downloads" = " "
-#"Music" = " "
-#"Pictures" = " "
+".dotfiles" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
 # Keep in mind that the order matters. For example:
 # "Important Documents" = " 󰈙 "
 # will not be replaced, because "Documents" was already substituted before.
@@ -89,25 +82,14 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:#A6DA95 fg:#1E2030"
 format = '[ $symbol ($version) ]($style)'
-
-# 
+#
 [git_branch]
-symbol = " "
-style = "fg:#f38ba8"
-format = 'git:\([$branch]($style bold)\) '
-#format = ' \([$branch]($style bold)\)'
+symbol = ""
+style = "bg:#F5A97F fg:#1E2030"
+format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:#f9e2af"
-#conflicted = "⚔️ "
-#ahead = "🏎️ 💨 "
-#diverged = "🔱 "
-#untracked = "🧩 "
-#stashed = "📦 "
-#modified = "📝 "
-#staged = "➕ "
-#renamed = "🔄 "
-#deleted = "❌ "
+style = "bg:#F5A97F fg:#1E2030"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]

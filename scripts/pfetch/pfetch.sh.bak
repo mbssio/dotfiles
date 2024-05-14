@@ -140,14 +140,13 @@ log() {
     esc_p SGR 0
 
     # Print the info name and info data separator, if applicable.
+    [ "$use_seperator" ] || printf %s "$PF_SEP"
 
     # Move the cursor backward the length of the *current* info name and
     # then move it forwards the length of the *longest* info name. This
     # aligns each info data line.
     esc_p CUB "${#name}"
     esc_p CUF "${PF_ALIGN:-$info_length}"
-
-    [ "$use_seperator" ] || printf %s "$PF_SEP"
 
     # Print the info data, color it and strip all leading whitespace
     # from the string.
@@ -194,18 +193,7 @@ get_title() {
     log "${user}@${hostname}" " " " " >&6
 }
 
-get_ip() {
-	address=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
-
-	log ip "${address}" >&6 
-}
-
-get_weather() {
-	weather=$(cat "${PF_WEATHER}")
-	log weather "${weather}" >&6
-}
-
-get_os(){
+get_os() {
     # This function is called twice, once to detect the distribution name
     # for the purposes of picking an ascii art early and secondly to display
     # the distribution name in the info output (if enabled).
@@ -1101,8 +1089,8 @@ get_palette() {
     # False positive.
     # shellcheck disable=2154
     {
-        # esc SGR 7
-        palette="$e$c1 ● $c2 ● $c3 ● $c4 ● $c5 ● $c6 ● "
+        esc SGR 7
+        palette="$e$c1 $c1 $c2 $c2 $c3 $c3 $c4 $c4 $c5 $c5 $c6 $c6 "
         esc SGR 0
         palette="$palette$e"
     }
@@ -1111,7 +1099,6 @@ get_palette() {
     printf '\n' >&6
     log "$palette
         " " " " " >&6
-    printf '\n' >&6
 }
 
 get_ascii() {
@@ -1803,10 +1790,10 @@ get_ascii() {
 
         ([Cc]atppuccin*)
             read_ascii 2 <<-EOF
-				${c6} /| ､
-				${c6}(°､ ｡ 7
-				${c6} |､  ~ヽ
-				${c6} じしf_,)〳‎‎
+				${c2} /| ､
+				${c2}(°､ ｡ 7
+				${c2} |､  ~ヽ
+				${c2} じしf_,)〳‎‎
 			EOF
         ;;
 
