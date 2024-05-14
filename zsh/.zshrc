@@ -15,6 +15,9 @@ export ZSH_ASK_API_KEY=$(cat ~/.api_keys/chatgpt)
 # Deepl API key
 export DEEPL_API_KEY=$(cat ~/.api_keys/deepl)
 
+# TheFuck
+eval $(thefuck --alias)
+
 # pfetch configuration
 export PF_ASCII="Catppuccin"
 export PF_INFO="ascii title os uptime pkgs memory"
