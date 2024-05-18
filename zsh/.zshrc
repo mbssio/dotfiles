@@ -18,6 +18,9 @@ export DEEPL_API_KEY=$(cat ~/.api_keys/deepl)
 # TheFuck
 eval $(thefuck --alias)
 
+# Kitty
+export TERM=xterm-kitty
+
 # pfetch configuration
 export PF_ASCII="Catppuccin"
 export PF_INFO="ascii title uptime memory weather"
@@ -39,6 +42,7 @@ alias s="kitten ssh"
 alias d="kitten diff"
 alias am="$HOME/.dotfiles/scripts/am-cli-player/am.sh"
 alias pfetch="echo '\n' && $HOME/.dotfiles/scripts/pfetch/pfetch.sh"
+alias nvimplug="$HOME/.dotfiles/scripts/nvim-plugin-switch/nvim-plugin-switch.sh"
 alias en_de="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar en de"
 alias de_en="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar de en"
 alias .df="cd ~/.dotfiles"
