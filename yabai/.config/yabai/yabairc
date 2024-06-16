@@ -35,5 +35,7 @@ yabai -m rule --add app="^Mail$" manage=off
 yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
 yabai -m rule --add app="^Weather$" manage=off
+yabai -m rule --add app="^wine64-preloader$" manage=off
+yabai -m rule --add app="^XIV on Mac$" manage=off
 
 borders active_color=0xff89b4fa inactive_color=0xff24273a width=7.0 &

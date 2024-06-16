@@ -15,6 +15,9 @@ export ZSH_ASK_API_KEY=$(cat ~/.api_keys/chatgpt)
 # Deepl API key
 export DEEPL_API_KEY=$(cat ~/.api_keys/deepl)
 
+# Telegram Bot
+export TELEGRAM_BOT=$(cat ~/.api_keys/telegram)
+
 # TheFuck
 eval $(thefuck --alias)
 
@@ -46,6 +49,7 @@ alias nvimplug="$HOME/.dotfiles/scripts/nvim-plugin-switch/nvim-plugin-switch.sh
 alias en_de="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar en de"
 alias de_en="java -jar $HOME/.dotfiles/scripts/dictcc/dictcc.jar de en"
 alias .df="cd ~/.dotfiles"
+alias .nv="cd ~/.dotfiles/nvim/.config/nvim/"
 alias "rsyabai"="yabai --stop-service && yabai --start-service"
 export NVM_DIR="$HOME/.nvm"
 
