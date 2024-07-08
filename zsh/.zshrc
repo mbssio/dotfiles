@@ -18,6 +18,11 @@ export DEEPL_API_KEY=$(cat ~/.api_keys/deepl)
 # Telegram Bot
 export TELEGRAM_BOT=$(cat ~/.api_keys/telegram)
 
+# PostgreSQL Local
+export PG_URL=postgresql://localhost:5432
+export PG_USER=postgres
+export PG_PASSWORD=$(cat ~/.api_keys/pglocal)
+
 # TheFuck
 eval $(thefuck --alias)
 
